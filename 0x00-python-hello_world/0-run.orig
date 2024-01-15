@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-#!/bin/bash/
-python  $PYFILE
-=======
-#!/bin/bash
-python $PYFILE
->>>>>>> origin/main
