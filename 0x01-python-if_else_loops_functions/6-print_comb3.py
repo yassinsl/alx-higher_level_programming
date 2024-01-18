@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-i = 0
-while i <= 8:
-    j = i + 1
-    while j <= 9:
-        print("{}{}".format(i, j), end='')
-        if i != 8 :
-            print(", ", end='')
-        j += 1
-    i += 1
+number = 0
+while number <= 89:
+    if number % 10 == 0:
+        number += 1 + number // 10
+    print("{:02d}".format(number), end='\n' if number == 89 else ", ")
+    number += 1
