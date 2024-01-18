@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import sys
 argement = len(sys.argv) - 1
-
 if argement == 1:
 	print ("{} argument:".format(argement))
 elif(argement == 0):
@@ -11,4 +10,4 @@ else:
 if argement > 0:
 	for i in (range(1, argement  + 1)):
 		print("{}: {}".format(i, sys.argv[i]))
-	
+
