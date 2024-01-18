@@ -11,4 +11,3 @@ if __name__ == "__main__":
     if argement > 0:
         for i in (range(1, argement  + 1)):
             print("{}: {}".format(i, sys.argv[i]))
-
