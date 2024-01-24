@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 # -----------------------------------------------------------
 # Python program that:
-# demonstrates how to delete keys with a specific value in a dictionary
+# demonstrates how to compute the square value of all integers of a matrix
 #
-# (C) 2022 Igbinijesu Samuel, Lagos, Nigeria
-# email igbinijesusamuel@gmail.com
+# (C) 2024 Yassin LAHSSINI, MARROCO
 # -----------------------------------------------------------
-
 
 def complex_delete(a_dictionary, value):
     for idx in list(a_dictionary.keys()):

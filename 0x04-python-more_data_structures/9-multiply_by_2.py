@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 # -----------------------------------------------------------
 # Python program that:
-# demonstrates how to return a new dictionary with all values multiplied by 2
+# demonstrates how to compute the square value of all integers of a matrix
 #
-# (C) 2022 Igbinijesu Samuel, Lagos, Nigeria
-# email igbinijesusamuel@gmail.com
+# (C) 2024 Yassin LAHSSINI, MARROCO
 # -----------------------------------------------------------
-
 
 def multiply_by_2(a_dictionary):
     new_dict = a_dictionary.copy()

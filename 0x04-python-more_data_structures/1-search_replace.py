@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 # -----------------------------------------------------------
 # Python program that:
-# demonstrates how to replace all occurrences of an element by
-# another in a new list
+# demonstrates how to compute the square value of all integers of a matrix
 #
-# (C) 2022 Igbinijesu Samuel, Lagos, Nigeria
-# email igbinijesusamuel@gmail.com
+# (C) 2024 Yassin LAHSSINI, MARROCO
 # -----------------------------------------------------------
-
-
 def search_replace(my_list, search, replace):
     new_list = []
     for item in my_list:

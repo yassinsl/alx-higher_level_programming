@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 # -----------------------------------------------------------
 # Python program that:
-# demonstrates how to replace or add key/value in a dictionary
+# demonstrates how to compute the square value of all integers of a matrix
 #
-# (C) 2022 Igbinijesu Samuel, Lagos, Nigeria
-# email igbinijesusamuel@gmail.com
+# (C) 2024 Yassin LAHSSINI, MARROCO
 # -----------------------------------------------------------
-
 
 def update_dictionary(a_dictionary, key, value):
     if key not in a_dictionary:
