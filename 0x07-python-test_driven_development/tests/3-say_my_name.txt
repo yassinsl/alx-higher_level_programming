@@ -1,63 +1,62 @@
-===============================
- How to Use doctest_in_help.py
-===============================
+# 3-say_my_name.txt
 
-This library is very simple, since it only has one function called
-``my_function()``.
+This modules defines a function ``say_my_name(first_name, last_name="")``.
 
-Numbers
-=======
-
-``my_function()`` returns the product of its arguments.  For numbers,
-that value is equivalent to using the ``*`` operator.
+Say_my_name(...)`` prints "My name is <first_name> <last_name>".
 
 ::
 
     >>> say_my_name = __import__('3-say_my_name').say_my_name
-    >>> say_my_name("Nildiert", "Jimenez")
-    My name is Nildiert Jimenez
-
-
-
-It also works with floating-point values.
+    >>> say_my_name("Brennan", "Baraban")
+    My name is Brennan Baraban
 
 ::
-    >>> say_my_name("", 2)
+
+    >>> say_my_name("Cornelius Maxwell", "Jones II")
+    My name is Cornelius Maxwell Jones II
+
+The parameter ```last_name``` is optional. If no last name is provided,
+an empty string is printed instead.
+
+::
+
+    >>> say_my_name("Brennan")
+    My name is Brennan 
+
+Invalid Names
+=============
+
+The parameters ``first_name`` and ``last_name``` must be strings. Otherwise,
+a TypeError is raised.
+
+::
+
+    >>> say_my_name(6, "James")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name("LeBron", ["Cavs", "Lakers", "Heat"])
     Traceback (most recent call last):
     TypeError: last_name must be a string
 
-    >>> say_my_name("", None)
-    Traceback (most recent call last):
-    TypeError: last_name must be a string
+::
 
-    >>> say_my_name(None, None)
+    >>> say_my_name({"LeBron": 6, "James": 23}, 7.7)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
+::
 
-    >>> say_my_name(1, 2)
+    >>> say_my_name(None)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-    >>> say_my_name(1, "Jaramillo")
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
+At least one name must be provided.
 
-    >>> say_my_name("", "Smith")
-    My name is  Smith
-
-    >>> say_my_name("", "")
-    My name is  
+::
 
     >>> say_my_name()
     Traceback (most recent call last):
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
-
-Non-Numbers
-===========
-
-Because ``*`` is also defined on data types other than numbers,
-``my_function()`` works just as well if one of the arguments is a
-string, a list, or a tuple.
-
-::
